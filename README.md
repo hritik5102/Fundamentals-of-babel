@@ -1,4 +1,4 @@
-## Babel
+## Introduction of Babel ✨
 
 The JavaScript language is constantly *evolving*, with new features being added regularly. 
 
@@ -14,6 +14,8 @@ This means that you cannot use this feature in an older browser. We need to have
 We don't know what the new feature is and its support on older browsers, so we need a solution to overcome this problem.
 
 ### Solution
+
+<img src="assets/3.webp">
 
 [Babel - The compiler for next generation JavaScript](https://babeljs.io/)
 
@@ -49,7 +51,7 @@ This package will help us to configure, what browser we want to support by using
 npm install @babel/preset-env
 ```
 
-`preset-env` : preset contains all the rules that babel needs to transpile your code to any environment you’ve specifies for example to ES2015.
+`preset-env` : preset contains all the rules that babel needs to transpile your code to any environment you’ve specifies for example to ES2015 (ES6).
 
 Inside the terminal
 
@@ -143,7 +145,9 @@ var getItem = /*#__PURE__*/function () {
 }();
 ```
 
-Const, let, arrow function, async await will transpiled into ecmascript 5 ( ES5 ).
+## const, let, arrow function, async await will transpiled into ecmascript 5 ( ES5 ).
+
+<img src="assets/4.png" width="60%" height="60%">
 
 ```
 💡 Catch
@@ -263,6 +267,8 @@ const getItem = async () => {
   return await fetch("https://google.com");
 };
 ```
+
+### Specify the target browser inside the babel configuration
 
 You can write your babel config, from which onwards you want to add a support
 
