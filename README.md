@@ -1,6 +1,6 @@
 ## Introduction of Babel ✨
 
-The JavaScript language is constantly *evolving*, with new features being added regularly. 
+The JavaScript language is constantly **evolving**, with new features being added regularly. 
 
 However, not all browsers implement these features at the same time. Thus, a JavaScript feature available in one browser might not be available in another. This could be due to differences in the speed of adopting new standards, or because some browsers no longer update (like Internet Explorer). As a result, developers often need to ensure their code works across different browsers, which might involve using tools like Babel to transpile modern JavaScript code into a version that older browsers can understand.
 
@@ -145,14 +145,18 @@ var getItem = /*#__PURE__*/function () {
 }();
 ```
 
-## const, let, arrow function, async await will transpiled into ecmascript 5 ( ES5 ).
+## Transpile code from ES2015 (ES6) to ES2014 (ES5).
 
 <img src="assets/4.png" width="60%" height="60%">
+
+
+The keywords “const”, “let”, arrow functions, and async/await will be transpiled into ECMAScript 5 (ES5).
 
 ```
 💡 Catch
 
-This is not the best solution, because we are assuming that ES5 will probably work in all browsers. But actually, it will not work for the older version.
+This is not the best solution, because we are assuming that ES5 will probably work in all 
+browsers. But actually, it will not work for the older version.
 ```
 
 **Important**: We should think about the browser that we want to support.
